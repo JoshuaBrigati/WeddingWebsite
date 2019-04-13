@@ -2,6 +2,7 @@ import Link from 'next/link'
 
 import Layout from '../components/Layout'
 import JoshRaynaPage from '../components/JoshRaynaPage'
+import Sections from '../components/Sections'
 
 export default class index extends React.Component {
     constructor(props) {
@@ -34,9 +35,9 @@ export default class index extends React.Component {
                 <div>
                     <div className="shadow"></div>
                     <JoshRaynaPage />
+                    <Sections />
                 </div>
             </Layout>
         )
     }
-
 }

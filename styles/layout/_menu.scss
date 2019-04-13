@@ -1,19 +1,5 @@
 /* Menu */
 
-// position: fixed;
-// display: -ms-flexbox;
-// display: flex;
-// top: 30px;
-// left: 10px;
-// padding: 30px;
-// -ms-flex-align: center;
-// align-items: center;
-// background: radial-gradient(ellipse at center,rgba(0,0,0,.1) 0,rgba(0,0,0,.1) 4%,transparent 78%);
-// background-repeat: no-repeat;
-
-
-
-
 	#menu {
 		@include vendor('transition', (
 			'transform #{_duration(menu)} ease',
