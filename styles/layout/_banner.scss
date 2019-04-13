@@ -4,7 +4,7 @@
 		@include vendor('align-items', 'center');
 		background-color: _palette(bg);
 		
-		// @include vendor('background-image', 'url("/static/images/R&J-34.jpg")');
+		@include vendor('background-image', 'url("/static/images/R&J-34.jpg")');
 		@include vendor('display', 'flex');
 		@include padding(4em, 0, (2em, 0, 0, 0));
 		background-attachment: fixed;
@@ -35,7 +35,6 @@
 			display: block;
 			height: 100%;
 			left: 0;
-			opacity: 0.45;
 			position: absolute;
 			top: 0;
 			width: 100%;
@@ -43,7 +42,9 @@
 		}
 
 		h1 {
-			font-size: 3.25em;
+			font-size: 55px;
+			font-weight: 100;
+			line-height: 1.1;
 		}
 
 		> .inner {
@@ -53,9 +54,22 @@
 				'filter 0.5s ease',
 				'-webkit-filter 0.5s ease'
 			));
+			@include vendor('display', 'flex');			
 			padding: 0 !important;
 			position: relative;
 			z-index: 2;
+			position: absolute;
+			bottom: 0;
+			right: 0;
+			top: 0;
+			left: 0;
+			margin: 10% 20% 11% 10% !important;
+			-ms-flex-direction: column;
+			flex-direction: column;
+			-ms-flex-line-pack: center;
+			align-content: center;
+			-ms-flex-pack: end;
+			justify-content: flex-end;
 
 			.image {
 				display: none;
@@ -76,7 +90,7 @@
 			.content {
 				@include vendor('display', 'flex');
 				@include vendor('align-items', 'center');
-				margin: 0 0 _size(element-margin) 0;
+				margin: 0;
 
 				> * {
 					margin-left: 1.5em;
@@ -88,18 +102,32 @@
 				}
 
 				p {
-					font-size: 0.7em;
+					// font-size: 0.7em;
 					font-weight: _font(weight-bold);
 					letter-spacing: _font(letter-spacing-alt);
-					text-transform: uppercase;
+					// text-transform: uppercase;
+					letter-spacing: .1px;
+					font-weight: 300;
+					color: #fff;
+					margin: 20px 0 20px 0;
+					z-index: 10;
+					font-size: 25px;
+					font-weight: 300;
+					line-height: 1.3;
 				}
 			}
 		}
 
 		&.major {
-			height: 100vh;
-			min-height: 30em;
-			max-height: 100em;
+			height: 100%;
+			overflow: hidden;
+			left: 0; 
+			top: 0;
+			bottom: 0;
+			position: fixed;
+			width: 61%;
+			max-height: 100%;
+			margin-bottom: 0;
 
 			&.alt {
 				opacity: 0.75;

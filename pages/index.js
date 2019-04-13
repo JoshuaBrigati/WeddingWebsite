@@ -1,7 +1,7 @@
 import Link from 'next/link'
 
 import Layout from '../components/Layout'
-import Banner from '../components/Banner'
+import JoshRaynaPage from '../components/JoshRaynaPage'
 
 export default class index extends React.Component {
     constructor(props) {
@@ -32,7 +32,8 @@ export default class index extends React.Component {
         return (
             <Layout>
                 <div>
-                    <Banner />
+                    <div className="shadow"></div>
+                    <JoshRaynaPage />
                 </div>
             </Layout>
         )
