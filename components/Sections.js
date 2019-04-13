@@ -1,8 +1,7 @@
-import Link from 'next/link'
+import CountDown from './Countdown'
 
-import Layout from '../components/Layout'
 
-export default class index extends React.Component {
+export default class Sections extends React.Component {
     constructor(props) {
         super(props)
         this.state = {
@@ -24,9 +23,15 @@ export default class index extends React.Component {
                         <h4 className="ng-binding">
                             Saturday, November 9, 2019
                         </h4>
-                    </div>
+                        <CountDown />
+                        <div className="rsvp-button">
+                            <div className="one-inside">
+                                <span>RSVP Here</span>
+                            </div>
+                        </div>
+                    </div >
                 </div>
-            </div >
+            </div>
         )
     }
 }
