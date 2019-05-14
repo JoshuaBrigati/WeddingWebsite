@@ -77,6 +77,7 @@
 
 			header {
 				width: auto;
+				z-index: 3;
 
 				> :first-child {
 					width: auto;
@@ -155,6 +156,14 @@
 
 		@include breakpoint(large) {
 			background-attachment: scroll;
+			transform: scale(.1,.1)
+		}
+
+		@media screen and (min-width: 1280px){
+			#banner {
+				-webkit-transform: scale(0.1, 0.1);
+				transform: scale(0.1, 0.1);
+			}
 		}
 
 		@include breakpoint(small) {

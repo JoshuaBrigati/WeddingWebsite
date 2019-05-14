@@ -6,10 +6,9 @@ const Banner = (props) => (
             </header>
             <div className="content">
                 <p>We can't wait to share our special day with you. Help us capture our wedding with Joy.</p>
-                {/* <ul className="actions">
-                    <li><a href="#one" className="button next scrolly">RSVP</a></li>
-                </ul> */}
             </div>
+            <div className="shadow"></div>
+
         </div>
     </section>
 )

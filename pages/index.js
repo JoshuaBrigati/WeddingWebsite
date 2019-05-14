@@ -33,7 +33,6 @@ export default class index extends React.Component {
         return (
             <Layout>
                 <div>
-                    <div className="shadow"></div>
                     <JoshRaynaPage />
                     <Sections />
                 </div>

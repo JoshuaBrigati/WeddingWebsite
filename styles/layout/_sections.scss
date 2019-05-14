@@ -13,7 +13,34 @@
         color: rgb(255, 255, 255);
         right: 0;
         justify-content: center;
-        overflow: hidden;
+        // overflow: hidden;
+
+        #story {
+            padding: 60px;
+            background-color: #fff;
+
+            h2 {
+                font-family: Roboto;
+                font-weight: 100;
+                text-align: center;
+                line-height: 1.1 !important;
+                color: #333;
+            }
+            
+            p {
+                color: #333;
+                font-size: 15px;
+                line-height: 24px;
+                margin-block-start: 1em;
+                margin-block-end: 1em;
+                margin-inline-start: 0px;
+                margin-inline-end: 0px;
+            }
+            @media screen and (max-width: 1200px) {
+                padding:40px
+            }
+        }
+       
 
         #welcome {
             justify-content: center;
@@ -76,6 +103,7 @@
                 font-weight: 300;
             }
         }
+
     }
 
     #Countdown {
